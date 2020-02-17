@@ -3,6 +3,7 @@ package com.dji.test2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button btnlogin=(Button)findViewById(R.id.login);
         btnlogin.setOnClickListener(AA);
+        TextView textView = (TextView) findViewById(R.id.textView);
+
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
     }
     View.OnClickListener AA = new View.OnClickListener() {
         @Override
