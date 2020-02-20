@@ -9,26 +9,39 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
 
+import java.time.Instant;
+
 public class MainActivity extends AppCompatActivity {
-    private Button btnlogin;
-    private TextView txt2;
+     Button btnlogin;
+     TextView txt2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnlogin=(Button)findViewById(R.id.login);
-        btnlogin.setOnClickListener(AA);
-        TextView textView = (TextView) findViewById(R.id.textView);
+        btnlogin=findViewById(R.id.login);
 
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
+        txt2=findViewById(R.id.textView);
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
+
+            }
+        });
+        txt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent();
+                intent.setClass(MainActivity.this,forgetpassword.class);
+                startActivity(intent);
+
+            }
+        });
+
+
     }
-    View.OnClickListener AA = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this,Main2Activity.class );
 
-            startActivity(intent);
 
-        }
-    };
 }
