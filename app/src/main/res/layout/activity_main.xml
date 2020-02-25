@@ -26,8 +26,8 @@
 
     <EditText
         android:id="@+id/account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
         android:background="@drawable/bordor"
         android:ems="10"
         android:hint="@string/帳號"
@@ -35,7 +35,7 @@
         android:textAlignment="center"
         android:textColor="#3077AF"
         android:textColorHint="#3077AF"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -45,8 +45,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="358dp"
-        android:layout_height="39dp"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
         android:background="@drawable/bordor"
         android:ems="10"
         android:hint="@string/密碼"
@@ -54,7 +54,7 @@
         android:textAlignment="center"
         android:textColor="#3077AF"
         android:textColorHint="#3077AF"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -64,8 +64,8 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="358dp"
-        android:layout_height="39dp"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
         android:background="@drawable/buttencolor"
         android:text="@string/登入"
         android:textColor="#F1F9FF"
@@ -90,19 +90,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lan" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginRight="203dp"
         android:text="@string/忘記密碼"
         android:textColor="@color/pink"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <ImageView
         android:id="@+id/textView2"
@@ -116,6 +120,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="92dp"
+        android:text="註冊"
+        android:layout_marginLeft="203dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginRight="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

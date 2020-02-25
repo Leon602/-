@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnlogin=findViewById(R.id.login);
 
-        txt2=findViewById(R.id.textView);
+        txt2=findViewById(R.id.textView8);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
